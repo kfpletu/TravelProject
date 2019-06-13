@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/information.css">
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/order.css">
+    <script src="./js/Calendar.js"></script>
 </head>
 <script src="../travel/js/jquery.js"></script>
 
@@ -133,9 +134,9 @@
                 <div class="center">
                     <p>
                         <label for="from_day">出发时间</label>
-                        <input type="text" name="from_day">
+                        <input type="text" name="from_day" onclick="fPopCalendar(event,this,this)" readonly="readonly">
                         <label for="to_day">返回时间</label>
-                        <input type="text" name="to_day">
+                        <input type="text" name="to_day" onclick="fPopCalendar(event,this,this)" readonly="readonly">
                     </p>
 
                 </div>

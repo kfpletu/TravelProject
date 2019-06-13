@@ -1,6 +1,4 @@
-body,
-h1,
-ul ,h2,h3,figure,p{
+body,h1,ul,h2,h3,figure,p{
     margin: 0;
     padding: 0;
 }
