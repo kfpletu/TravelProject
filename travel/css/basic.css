@@ -15,6 +15,10 @@ body,h1,ul,h2,h3,figure,p{
     text-indent: -999px;
 }
 
+#header .center .logo a:hover{
+    background-color: #80808000;
+}
+
 a {
     text-decoration: none;
 }

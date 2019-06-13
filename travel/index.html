@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/basic.css">
 </head>
-<script src="js/home_banner_start.js"></script>
+<script src="../travel/js/jquery.js"></script>
+<script src="js/home_banner.js"></script>
+
 <body>
     <header id="header">
         <div class="center">
-            <h1 class="logo">乐途旅行网</h1>
+            <h1 class="logo">
+                <a href="index.html" id="logoA">乐途旅行网</a>
+            </h1>
             <nav>
                 <ul class="link">
                     <h1 class="none">网站导航</h1>
@@ -24,12 +28,13 @@
                     <li><a href="about.html">关于我们</a></li>
                 </ul>
             </nav>
-
         </div>
     </header>
     <div id="search">
         <div id="imgd">
-            <img src="img/home_banner/shouye.jpg" alt="" id="plantImg">
+            <a href="index.html" id="src">
+                <img src="img/home_banner/shouye.jpg" alt="" id="plantImg">
+            </a>
         </div>
     </div>
     <div id="tour">
