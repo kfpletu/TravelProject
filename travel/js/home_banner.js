@@ -26,7 +26,12 @@ $(function(){
         'html/dayanta.html',
         'html/zhonglou.html',
         'html/datangfurongyuan.html',
-        ''
+        'html/bingmayong.html',
+        'html/datangfurongyuan.html',
+        'html/huashan.html',
+        'html/bingmayong.html',
+        'html/zhonglou.html',
+        'html/huashan.html',
     ]
     var src=$('#src')
     var srcTimer=setInterval(srcStart,2000)
