@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+a:hover{
+    background-color: #458b00;
+    color: #fff;
+}
 #headline {
     width: 100%;
     min-width: 1263px;
@@ -170,8 +174,6 @@
 }
 
 #container .infor .left li:first-child {
-    background-color: #fff;
-    border-top: 2px solid #458b00;
     position: relative;
     left: 1px;
 }
