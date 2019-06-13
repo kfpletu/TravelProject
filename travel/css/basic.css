@@ -123,3 +123,12 @@ ul,ol {
     background-color: #000;
     border-top: 1px solid #444;
 }
+#footer .top p{
+    margin-left: 20px;
+    height: 36px;
+    font-size: 18px;
+}
+#footer .top  a{
+    color: gray;
+    
+}
