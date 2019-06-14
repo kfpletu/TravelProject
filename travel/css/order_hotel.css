@@ -219,6 +219,25 @@ a:visited {
 .hotel_figure a:hover{
     background: #458B00;
 }
+#brandListBox{
+    margin-top: 40px;
+    margin: 40px auto;
+    width: 880px;
+    height: 84px;
+    border:1px solid #666;
+    text-align: center;
+    font-size: 12px;
+}
+#brandListBox .brandList{
+    width: 86px;
+    height: 78px;
+
+    float: left;
+}
+#brandListBox .brandList img{
+    width:80px;
+    height:60px;
+}
 #container .list .more {
     margin: 20px auto;
 
