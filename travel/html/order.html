@@ -5,28 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/information.css">
-    <link rel="stylesheet" href="./css/basic.css">
-    <link rel="stylesheet" href="./css/order.css">
-    <script src="./js/Calendar.js"></script>
+    <title>乐途旅行</title>
+    <link rel="stylesheet" href="../css/information.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <!-- <script src="../js/Calendar.js"></script> -->
+    <script src="../travel/js/jquery.js"></script>
+    <script src="../travel/js/jquery.js"></script>
+    <script src="../js/layDate-v5.0.9/laydate/laydate.js"></script> <!-- 改成你的路径 -->
+    <script>
+        lay('#version').html('-v' + laydate.v);
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#from_date' //指定元素,即你要输入的框的id号即可
+        });
+        laydate.render({
+            elem: '#to_date' //指定元素,即你要输入的框的id号即可
+        });
+    </script>
 </head>
-<script src="../travel/js/jquery.js"></script>
+
 
 <body>
     <header id="header">
         <div class="center">
             <h1 class="logo">
-                <a href="index.html" id="logoA">乐途旅行网</a>
+                <a href="../index.html" id="logoA">乐途旅行网</a>
             </h1>
             <nav>
                 <ul class="link">
                     <h1 class="none">网站导航</h1>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="information.html">景点门票</a></li>
-                    <li class="active"><a href="order.html">交通出行</a></li>
-                    <li><a href="preview.html">酒店预定</a></li>
-                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../html/information.html">景点门票</a></li>
+                    <li class="active"><a href="../html/order.html">交通出行</a></li>
+                    <li><a href="../html/preview.html">酒店预定</a></li>
+                    <li><a href="../html/about.html">关于我们</a></li>
                 </ul>
             </nav>
 
@@ -74,28 +88,28 @@
                 <h2>热卖旅游</h2>
                 <div class="figure">
                     <figure>
-                        <img src="./img/information/hot1.jpg" alt="曼谷-芭提雅6日游">
+                        <img src="../img/information/hot1.jpg" alt="曼谷-芭提雅6日游">
                         <figcaption>曼谷-芭提雅6日游</figcaption>
                     </figure>
-                    <figure> <img src="./img/information/hot2.jpg" alt="马尔代夫双鱼 6 日游">
+                    <figure> <img src="../img/information/hot2.jpg" alt="马尔代夫双鱼 6 日游">
                         <figcaption>马尔代夫双鱼 6 日游</figcaption>
                     </figure>
-                    <figure> <img src="./img/information/hot2.jpg" alt="海南双飞 5 日游">
+                    <figure> <img src="../img/information/hot2.jpg" alt="海南双飞 5 日游">
                         <figcaption>海南双飞 5 日游</figcaption>
                     </figure>
-                    <figure> <img src="./img/information/hot2.jpg" alt="富山大阪东京 8 日游">
+                    <figure> <img src="../img/information/hot2.jpg" alt="富山大阪东京 8 日游">
                         <figcaption>富山大阪东京 8 日游</figcaption>
                     </figure>
-                    <figure> <img src="./img/information/hot2.jpg" alt="法瑞意德 12 日游">
+                    <figure> <img src="../img/information/hot2.jpg" alt="法瑞意德 12 日游">
                         <figcaption>法瑞意德 12 日游</figcaption>
                     </figure>
-                    <figure> <img src="./img/information/hot2.jpg" alt="巴厘岛 6 日半游">
+                    <figure> <img src="../img/information/hot2.jpg" alt="巴厘岛 6 日半游">
                         <figcaption>巴厘岛 6 日半游</figcaption>
                     </figure>
-                    <figure> <img src="./img/information/hot2.jpg" alt="塞舌尔迪拜 9 日游">
+                    <figure> <img src="../img/information/hot2.jpg" alt="塞舌尔迪拜 9 日游">
                         <figcaption>塞舌尔迪拜 9 日游</figcaption>
                     </figure>
-                    <figure> <img src="./img/information/hot2.jpg" alt="花样土耳其 10 日游">
+                    <figure> <img src="../img/information/hot2.jpg" alt="花样土耳其 10 日游">
                         <figcaption>花样土耳其 10 日游</figcaption>
                     </figure>
                 </div>
@@ -134,9 +148,9 @@
                 <div class="center">
                     <p>
                         <label for="from_day">出发时间</label>
-                        <input type="text" name="from_day" onclick="fPopCalendar(event,this,this)" readonly="readonly">
+                        <input type="text" name="from_day" class="demo-input" placeholder="请选择日期" id="from_date">
                         <label for="to_day">返回时间</label>
-                        <input type="text" name="to_day" onclick="fPopCalendar(event,this,this)" readonly="readonly">
+                        <input type="text" name="to_day" class="demo-input" placeholder="请选择日期" id="to_date">
                     </p>
 
                 </div>
@@ -268,23 +282,19 @@
             <div class="block left">
                 <h2>合作伙伴</h2>
                 <hr>
-                <ul>
-                    <li>途牛旅游网</li>
-                    <li>驴妈妈旅游网</li>
-                    <li>携程旅行网</li>
-                    <li>中国青年旅行社</li>
-                </ul>
+                <p><a href="http://www.tuniu.com">途牛旅游网</a></p>
+                <p><a href="http://www.lvmama.com">驴妈妈旅游网</a></p>
+                <p><a href="http://www.ctrip.com">携程旅行网</a></p>
+                <p><a href="http://www.cytsonline.com">中国青年旅行社</a></p>
             </div>
             <div class="block center">
                 <h2>旅游 FAQ</h2>
                 <hr>
-                <ul>
-                    <li>旅游合同签订方式？</li>
-                    <li>儿童价是基于什么制定的？</li>
-                    <li>旅游的线路品质怎么界定的？</li>
-                    <li>单房差是什么？</li>
-                    <li>旅游保险有那些种类？</li>
-                </ul>
+                <p><a href="travelContract.html">旅游合同签订方式？</a></p>
+                <p><a href="childPrice.html">儿童价是基于什么制定的？</a></p>
+                <p><a href="touristRoute.html">旅游的线路品质怎么界定的？</a></p>
+                <p><a href="singleRoom.html">单房差是什么？</a></p>
+                <p><a href="travelInsuranceCategory.html">旅游保险有那些种类？</a></p>
             </div>
             <div class="block right">
                 <h2>联系方式</h2>
