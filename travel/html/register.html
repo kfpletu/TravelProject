@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>欢迎登录</title>
+    <title>免费注册</title>
     <link rel="stylesheet" href="../css/base.css" type="text/css">
-    <link rel="stylesheet" href="../css/login.css" type="text/css">
+    <link rel="stylesheet" href="../css/register.css" type="text/css">
 </head>
 <body>
     <div id="top">
         <a href="../index.html">
             <img src="../img/home/logo.png" alt="logo">
         </a>
-        <span>欢迎登录</span>
+        <span>免费注册</span>
         <a href="../index.html"><span class="s1">返回首页</span></a>
     </div>
     <div id="mian">
         <form action="">
             <div class="content">
                 <p>
-                    登录
-                    <a href="../html/register.html">新用户注册</a>
+                    注册
+                    <a href="../html/login.html">返回登录</a>
                 </p>
                 <div class="text">
                     <input type="text" name="uname" placeholder="请输入用户名">
@@ -31,15 +31,13 @@
                     <input type="password" name="upwd" placeholder="请输入密码">
                     <img src="../img/login/password.png" alt="">
                 </div>
-                <div class="validateCode">
-                    <img src="../img/header/logo.png" alt="验证码">
-                    <input type="text" name="validateCode" placeholder="验证码输入">
+                <div class="text phon">
+                    <input type="text" name="phone" placeholder="请输入手机号码" maxlength="11">
                 </div>
-                <div class="savePwd">
-                    <input type="checkbox" name="savePwd" id="">自动登录
-                    <a href="">忘记密码?</a>
+                <div class="text email">
+                    <input type="text" name="email" placeholder="请输入可用邮箱">
                 </div>
-                <input type="submit" id="" value="登录" class="login">
+                <input type="submit" id="" value="注册" class="login">
             </div>
         </form>
     </div>
