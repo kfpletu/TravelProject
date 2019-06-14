@@ -1,3 +1,9 @@
+#headline {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)) no-repeat center,
+        url(../img/information/headline_jiaotong.jpeg) no-repeat center;
+    background-size: 100% 300px;
+
+}
 #container .order {
     width: 900px;
     float: left;
