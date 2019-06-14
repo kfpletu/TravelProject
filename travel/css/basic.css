@@ -71,20 +71,19 @@ ul,ol {
     text-align: center;
 }
 #header .login{
-    position: absolute;
-    top: 0;
-    right: 0;
+    float: left;
+    margin-top: 40px;
+    font-size: 13px;
 }
 #header .login #login,#register{
     float: right;  
-    line-height: 70px;
 }
 #header .login a:hover{
     background: crimson;
 }
 #header .login #login{
     margin-right: 50px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 #footer{
     width: 100%;
