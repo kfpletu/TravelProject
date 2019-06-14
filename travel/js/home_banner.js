@@ -1,6 +1,8 @@
 $(function(){
-    var i=0
-    var img=$('#plantImg')
+    var i = 0;
+    var img = $('#plantImg');
+    var li = $("#imgd li");
+    var sta = 1;
     var imgList=
     [   'img/home_banner/banner01.jpg',
         'img/home_banner/banner02.jpg',
@@ -12,15 +14,27 @@ $(function(){
         'img/home_banner/banner08.jpg',
         'img/home_banner/banner09.jpg',
     ]
+    
     var timer=setInterval(imgStart,2000)
     function imgStart(){
-        img.prop('src',imgList[i])
-        i++
-        if(i==imgList.length){
-            i=0
-        }
-    }
+        if(timer>sta){
+            img.prop('src',imgList[i+1])
 
+        }else{
+            img.prop('src',imgList[i])
+        }
+        i++;
+        if(i<li.length){
+            li[i].style.background = "green";
+            li[i].previousElementSibling.style.background = "#fff";
+        }else{
+            li[i-1].style.background = "#fff";
+            i=0;
+            li[i].style.background = "green";  
+        }
+        
+       
+    } 
     var j=0
     var srcList=[
         'html/dayanta.html',
@@ -43,13 +57,41 @@ $(function(){
         }
     }
     
-    img.mouseover(function(){
-        clearTimeout(srcTimer)
-        clearTimeout(timer)
+    $("#imgd").mouseover(function(){
+        clearTimeout(srcTimer);
+        clearTimeout(timer);
+        sta = timer;
     })
-    img.mouseout(function(){
-        srcTimer=setInterval(srcStart,2000)
-        timer=setInterval(imgStart,2000)
+    $("#imgd").mouseout(function(){
+        srcTimer=setInterval(srcStart,2000);
+        timer=setInterval(imgStart,2000);
     })
-
+    
+    $("#imgd .left").click(function(){
+        if(i>0){
+            i--;
+        }
+        console.log(i)
+        if(i>=0){
+        img.prop('src',imgList[i]);
+        li[i].style.background = "green";
+        li[i].nextElementSibling.style.background = "#fff";
+        }
+    })
+    $("#imgd .right").click(function(){
+        if(i==li.length-1){
+            i = -1;
+        }
+        i++;
+        if(i<li.length){
+        img.prop('src',imgList[i]);
+        li[i].style.background = "green";
+        if(i==0){
+            li[li.length-1].style.background = "#fff";
+        }else{
+            li[i].previousElementSibling.style.background = "#fff";
+        }
+        
+        }    
+    })
 })
