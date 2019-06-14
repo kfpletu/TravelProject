@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OrderHotel</title>
+    <link rel="stylesheet" href="../css/information.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/order_hotel.css">
+    <script type="text/javascript" src='../js/jquery.js'></script>
+    <script type="text/javascript" src='../js/order_hotel.js'></script>
+    <script src="../js/layDate-v5.0.9/laydate/laydate.js"></script>
+    <script>
+        lay('#version').html('-v' + laydate.v);
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#from_date' 
+        });
+        laydate.render({
+            elem: '#to_date' //指定元素,即你要输入的框的id号即可
+        });
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="center">
+            <h1 class="logo">乐途旅行网</h1>
+            <nav>
+                <ul class="link">
+                    <h1 class="none">网站导航</h1>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="./information.html">景点门票</a></li>
+                    <li class="active"><a href="./order.html">交通出行</a></li>
+                    <li><a href="./order_hotel.html">酒店预定</a></li>
+                    <li><a href="./about.html">关于我们</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div id="headline">
+        <div class="center">
+            <hgroup>
+                <h2>酒店信息</h2>
+                <h3>推荐各类酒店信息，方便查看和预订</h3>
+            </hgroup>
+
+        </div>
+    </div>
+    <div id="container">
+        <aside class="sidebar">
+            <div class="sidebox recommend">
+                <h2>景点推荐</h2>
+                <div class="tag">
+                    <a href="###">曼谷(12)</a>
+                    <a href="###">东京(5)</a>
+                    <a href="###">西双版纳(8)</a>
+                    <a href="###">漓江(16)</a>
+                    <a href="###">呼伦贝尔(4)</a>
+                    <a href="###">首尔(9)</a>
+                    <a href="###">巴厘岛(15)</a>
+                    <a href="###">土耳其(22)</a>
+                    <a href="###">夏威夷(5)</a>
+                    <a href="###">巴厘岛(11)</a>
+                    <a href="###">毛里求斯(7)</a>
+                    <a href="###">吉普岛(4)</a>
+                    <a href="###">希腊(18)</a>
+                    <a href="###">法瑞意(8)</a>
+                    <a href="###">马尔代夫(9)</a>
+                    <a href="###">新西兰(16)</a>
+                    <a href="###">埃及(11)</a>
+                    <a href="###">迪拜(14)</a>
+                    <a href="###">斯里兰卡(7)</a>
+                    <a href="###">麦哈顿(3)</a>
+                    <a href="###">大阪(15)</a>
+                </div>
+
+            </div>
+            <div class="sidebox popular">
+                <h2>热卖旅游</h2>
+                <div class="figure">
+                    <figure>
+                        <img src="../img/information/hot1.jpg" alt="曼谷-芭提雅6日游">
+                        <figcaption>曼谷-芭提雅6日游</figcaption>
+                    </figure>
+                    <figure> <img src="../img/information/hot2.jpg" alt="马尔代夫双鱼 6 日游">
+                        <figcaption>马尔代夫双鱼 6 日游</figcaption>
+                    </figure>
+                    <figure> <img src="../img/information/hot2.jpg" alt="海南双飞 5 日游">
+                        <figcaption>海南双飞 5 日游</figcaption>
+                    </figure>
+                    <figure> <img src="../img/information/hot2.jpg" alt="富山大阪东京 8 日游">
+                        <figcaption>富山大阪东京 8 日游</figcaption>
+                    </figure>
+                    <figure> <img src="../img/information/hot2.jpg" alt="法瑞意德 12 日游">
+                        <figcaption>法瑞意德 12 日游</figcaption>
+                    </figure>
+                    <figure> <img src="../img/information/hot2.jpg" alt="巴厘岛 6 日半游">
+                        <figcaption>巴厘岛 6 日半游</figcaption>
+                    </figure>
+                    <figure> <img src="../img/information/hot2.jpg" alt="塞舌尔迪拜 9 日游">
+                        <figcaption>塞舌尔迪拜 9 日游</figcaption>
+                    </figure>
+                    <figure> <img src="../img/information/hot2.jpg" alt="花样土耳其 10 日游">
+                        <figcaption>花样土耳其 10 日游</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </aside>
+        <div class="list order">
+        <div class="out-form">
+            <div class="form">
+                <h2>酒店预订</h2>
+                <p>
+                    <ul class="infor">
+                        <li>住宿类型:</li>
+                        <li><a href="javascript:void(0)">星级酒店</a></li>
+                        <li><a href="javascript:void(0)">快速便捷</a></li>
+                        <li><a href="javascript:void(0)">民宿公寓</a></li>
+                        <li><a href="javascript:void(0)">主题套房</a></li>
+
+                    </ul>
+                </p>
+
+                <div class="form-top">
+                    <p>
+                        <label for="in-time">入住日期:</label>
+                        <input type="text" name="in-time" id="from_date" placeholder="请点击选择日期">
+                        <label for="out-time">退房日期:</label>
+                        <input type="text" name="out-time" id="to_date" placeholder="请点击选择日期">
+
+                    </p>
+
+                </div>
+                <div class="form-middle">
+                    <p>
+                        订房数量:
+                        <select name="room-num">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="1" selected>1</option>
+                        </select>
+                         房客数量:
+                        <select name="people-num">
+                            <option value="2">2人</option>
+                            <option value="3">3人</option>
+                            <option value="4">4人</option>
+                            <option value="5">5人及以上</option>
+                            <option value="1" selected>1人</option>
+                        </select>
+                        
+                    </p>
+
+                </div>
+                <div class="form-third">
+                    <p>
+                        酒店级别:
+                        <select name="hotel-level">
+                            <option value="2">星级酒店</option>
+                            <option value="3">主题套房</option>
+                            <option value="4">民宿公寓</option>
+                            <option value="1" selected>快速便捷</option>
+                        </select>
+                        <label for="room-keyword">其他要求:</label>
+                        <input type="text" name="room-keyword">
+                    </p>
+
+                </div>
+                <div class="form-bottom">
+                    <p>
+                        <button class="button">订房</button>
+                    </p>
+
+                </div>
+            </div>
+            <img src="../img/order_hotel/out-form-img.jpeg">
+        </div>
+            <div class="new">
+                <h2>热门酒店推荐</h2>
+                <ul>
+                    <li>热门品牌：</li>
+                    <li><a href="">全部</a></li>
+                    <li><a href="">富力希尔顿</a></li>
+                    <li><a href="">锦江之星</a></li>
+                    <li><a href="">汉庭连锁</a></li>
+                    <li><a href="">开元名都</a></li>
+                    <li><a href="">爱情情侣</a></li>
+                </ul>
+                <div class="hotel_imfor" >
+                    <figure class="hotel_figure">
+                        <img src="../img/order_hotel/awql.jpg" alt="The Pulpit Rock" class="hotel_img">
+                        <span class="hotel_name">爱情情侣</span>酒店 主题套房
+                        <a href="">点击进入</a>
+                    </figure>
+                    <figure class="hotel_figure">
+                        <img src="../img/order_hotel/dcht.jpg" alt="The Pulpit Rock" class="hotel_img">
+                        <span class="hotel_name">汉庭连锁</span>酒店 快速便捷
+                        <a href="">点击进入</a>
+                    </figure>
+                    <figure class="hotel_figure">
+                        <img src="../img/order_hotel/flxed.jpg" alt="The Pulpit Rock" class="hotel_img">
+                        <span class="hotel_name">富力希尔顿</span>酒店 星级酒店
+                        <a href="">点击进入</a>
+                    </figure>
+                    <figure class="hotel_figure">
+                        <img src="../img/order_hotel/jjzx.jpg" alt="The Pulpit Rock" class="hotel_img"><span class="hotel_name">锦江之星</span>酒店 快速便捷
+                        <a href="">点击进入</a>
+                    </figure>
+                    <figure class="hotel_figure">
+                        <img src="../img/order_hotel/kymd.jpg" alt="The Pulpit Rock" class="hotel_img">
+                        <span class="hotel_name">开元名都</span>酒店 星级酒店
+                        <a href="">点击进入</a>
+                    </figure>
+                    <figure class="hotel_figure">
+                        <img src="../img/order_hotel/mhlz.jpg" alt="The Pulpit Rock" class="hotel_img">
+                        <span class="hotel_name">美豪丽致</span>酒店 快速便捷
+                        <a href="">点击进入</a>
+                    </figure>
+                    <figure class="hotel_figure">
+                        <img src="../img/order_hotel/qzxw.jpg" alt="The Pulpit Rock" class="hotel_img">
+                        <span class="hotel_name">轻住西居</span>酒店 民宿公寓
+                        <a href="">点击进入</a>
+                    </figure>
+                    <figure class="hotel_figure">
+                        <img src="../img/order_hotel/xanqy.jpg" alt="The Pulpit Rock" class="hotel_img">
+                        <span class="hotel_name">希岸轻雅</span>酒店 主题酒店
+                        <a href="">点击进入</a>
+                    </figure>
+                </div>
+            </div>
+            <div class="more">加载更多...</div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="top">
+            <div class="block left">
+                <h2>合作伙伴</h2>
+                <hr>
+                <p><a href="http://www.tuniu.com">途牛旅游网</a></p>
+                <p><a href="http://www.lvmama.com">驴妈妈旅游网</a></p>
+                <p><a href="http://www.ctrip.com">携程旅行网</a></p>
+                <p><a href="http://www.cytsonline.com">中国青年旅行社</a></p>
+            </div>
+            <div class="block center">
+                <h2>旅游 FAQ</h2>
+                <hr>
+                <p><a href="travelContract.html">旅游合同签订方式？</a></p>
+                <p><a href="childPrice.html">儿童价是基于什么制定的？</a></p>
+                <p><a href="touristRoute.html">旅游的线路品质怎么界定的？</a></p>
+                <p><a href="singleRoom.html">单房差是什么？</a></p>
+                <p><a href="travelInsuranceCategory.html">旅游保险有那些种类？</a></p>
+            </div>
+            <div class="block right">
+                <h2>联系方式</h2>
+                <hr>
+                <ul>
+                    <li>微博：weibo.com/letu</li>
+                    <li>邮件：letu@letu.com</li>
+                    <li>地址：陕西西安碑林区中铁第一国际9层</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">Copyright ©LT 乐途旅行网 | 陕ICP备120110109号 | 旅行网经营许可证： L-LT-BK12345</div>
+    </footer>
+</body>
+
+</html>
