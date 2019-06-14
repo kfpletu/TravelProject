@@ -51,5 +51,4 @@ $(function(){
         srcTimer=setInterval(srcStart,2000)
         timer=setInterval(imgStart,2000)
     })
-
 })
