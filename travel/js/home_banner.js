@@ -6,6 +6,7 @@ $(function(){
     var count=0;
     var imgList=
     [   
+        'img/home_banner/banner01.jpg'
         'img/home_banner/banner02.jpg',
         'img/home_banner/banner03.jpg',
         'img/home_banner/banner04.jpg',
@@ -15,7 +16,6 @@ $(function(){
         'img/home_banner/banner08.jpg',
         'img/home_banner/banner09.jpg',
     ]
-    if()
     var timer=setInterval(imgStart,2000)
     function imgStart(){
         if(timer>sta){

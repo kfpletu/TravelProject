@@ -142,7 +142,12 @@
     position: relative;
     margin: 15px 12px;
 }
-
+/* #tour figure img:hover{
+    width:400px; 
+} */
+#tour figure:hover{
+    border: 1px solid red;
+}
 #tour figure img {
     vertical-align: middle;
     width: 380px;
