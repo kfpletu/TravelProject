@@ -70,6 +70,22 @@ ul,ol {
     width: 120px;
     text-align: center;
 }
+#header .login{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header .login #login,#register{
+    float: right;  
+    line-height: 70px;
+}
+#header .login a:hover{
+    background: crimson;
+}
+#header .login #login{
+    margin-right: 50px;
+    margin-left: 30px;
+}
 #footer{
     width: 100%;
     height: 360px;
