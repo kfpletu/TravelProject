@@ -5,13 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>乐途旅行</title>
     <link rel="stylesheet" href="../css/information.css">
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/order.css">
-    <script src="../js/Calendar.js"></script>
+    <!-- <script src="../js/Calendar.js"></script> -->
+    <script src="../travel/js/jquery.js"></script>
+    <script src="../travel/js/jquery.js"></script>
+    <script src="../js/layDate-v5.0.9/laydate/laydate.js"></script> <!-- 改成你的路径 -->
+    <script>
+        lay('#version').html('-v' + laydate.v);
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#from_date' //指定元素,即你要输入的框的id号即可
+        });
+        laydate.render({
+            elem: '#to_date' //指定元素,即你要输入的框的id号即可
+        });
+    </script>
 </head>
-<script src="../travel/js/jquery.js"></script>
+
 
 <body>
     <header id="header">
@@ -134,9 +148,9 @@
                 <div class="center">
                     <p>
                         <label for="from_day">出发时间</label>
-                        <input type="text" name="from_day" onclick="fPopCalendar(event,this,this)" readonly="readonly">
+                        <input type="text" name="from_day" class="demo-input" placeholder="请选择日期" id="from_date">
                         <label for="to_day">返回时间</label>
-                        <input type="text" name="to_day" onclick="fPopCalendar(event,this,this)" readonly="readonly">
+                        <input type="text" name="to_day" class="demo-input" placeholder="请选择日期" id="to_date">
                     </p>
 
                 </div>
