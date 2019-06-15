@@ -57,6 +57,13 @@ $(function(){
             imgList[liList.length-1].style.display = "none"
         }    
     })
+    $("#tour #search2 img").mouseover(function(){
+        $(this).attr('src',"./img/home_banner/search2.png")
+    })
+    $("#tour #search2 img").mouseout(function(){
+        $(this).attr('src',"./img/home_banner/search1.png")
+        $(this).prev().css('outline','none')
+    })
 })
 
 
