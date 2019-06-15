@@ -72,6 +72,22 @@
 .count span{
     float:right;
 } 
+
+.count a {
+    display:inline-block;
+    background:#dc143b;
+    width:80px;
+    height:30px;
+    color: #000;
+    border-radius: 5px;
+    text-align: center;
+    margin:2px 20px;
+
+}
+.count a:hover{
+    background:green;
+    color:white;
+}
 #bodytickrt .info{
     height:40px;
     width:1200px;
@@ -90,7 +106,7 @@
 	line-height:36px;
 }
 .check{
-	width:80px;
+	width:100px;
 }
 .gper{
     width:100px;
@@ -105,14 +121,12 @@
 	width:150px;
 }
 .gcount{
-	width:150px;
+	width:200px;
 }
 .gsum{
-	width:100px
+	width:150px;
 }
-.gord{
-	width:100px;
-}
+
 /*全选按钮的垂直对齐*/
 .checkAll{
 	vertical-align:middle;
@@ -155,19 +169,7 @@
 	text-align:center;
 }
 .gcount .minus{
-	margin-left:35px;
-}
-.gord a{
-    display:inline-block;
-    background:#dc143b;
-    width:50px;
-    height:30px;
-    color: #000;
-    border-radius: 5px;
-}
-.gord a:hover{
-    background:green;
-    color:white;
+	margin-left:60px;
 }
 #guid .daohang a{
     display: inline-block;
