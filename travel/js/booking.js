@@ -54,7 +54,8 @@ $(function(){
         sum();
     })
 
-    $("main .result input").click(function(){
+    $("#main .result input").click(function(){
+        $("box").css("display","block")
         confirm("是否要结算？")
     })
 })

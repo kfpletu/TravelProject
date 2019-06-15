@@ -1,11 +1,12 @@
 /*购物车*/
 
 #main{
+    box-sizing:border-box;
     width: 1200px;
-    margin: 30px auto;
-    
+    margin: 30px auto; 
 }
 #content{
+    box-sizing:border-box;
     width: 1200px;
     height: 1040px;
     border: 1px solid #333;
@@ -35,9 +36,11 @@
     height:50px;
     margin-top:20px;
     background-color: #f1f3f4;
+      
+}
+#checkout{
     position: fixed;
-    bottom: 100px;
-    
+    bottom: 60px;
 }
 .result input{
     width: 150px;
@@ -55,11 +58,14 @@
     font-size: 16px;
 }
 #main .balance span{
-    font-size: 14px;
+    font-size: 22px;
+    color: red;
 }
 #main .balance div{
     float: right;
-    margin-right: 45px;
+    margin-right: 20px; 
+    border-radius: 5%;
+    background: orange;
     color: #333;
 }
 
@@ -78,11 +84,11 @@
     line-height: 36px;
 }
 .check{
-    width: 6%;
+    width: 10%;
     background-color: #f1f3f4;
 }
 .gname{
-    width: 37%;
+    width: 33%;
     background-color: #f1f3f4;
 }
 .gprice{
@@ -126,13 +132,13 @@
     line-height: 115px;
 }
 .item .gname{
-    border-right: 1px solid gray;
     text-align: left;
 }
 .item .gname img{
     width: 84px;
     height: 84px;
-    float: left;
+    float: left; 
+    margin-left: 20%;
     margin-right: 20px;
     margin-top: 15px;
 }
