@@ -1,0 +1,51 @@
+#bodyer1{
+    width: 1200px;
+    height: 470px;
+    /* background: green; */
+    margin: 20px auto;
+    position: relative;
+    border: 1px solid gray;
+}
+.imgs{
+    width: 500px;
+    height: 400px;
+    background: orange;
+    position: absolute;
+    margin-top:20px;
+    /* margin-bottom: 10px; */
+    margin-left: 10px;
+}
+.sDetails{
+    width:660px;
+    height: 450px;
+    background:red;
+    right: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    float:right;
+    /* position: absolute; */
+}
+.table tr{
+    height: 55px;
+}
+.tdlast{
+    float: right;
+    margin-right: 60px;
+    color: gray;
+}
+#bodytickrt{
+    width: 1200px;
+    height: 600px;
+    margin: 20px auto;
+    position: relative;
+    border: 1px solid gray;
+}
+#bodytickrt h1{
+    color: orange;
+}
+#bodytickrt p{
+    color: gray;
+    border-top: 1px solid gray;
+    width:1000px;
+    margin: 0 auto;
+}
