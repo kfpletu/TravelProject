@@ -55,8 +55,12 @@ $(function(){
     })
 
     $("#main .result input").click(function(){
-        $("box").css("display","block")
-        confirm("是否要结算？")
+        console.log($("#main .result .total-price").html())
+        if($("#main .result .total-price").html()!=0.00){
+            confirm("是否要结算？")
+        }else{
+            confirm("没有要结算的订单........")
+        }
     })
 })
 function countPrice(that,value){
