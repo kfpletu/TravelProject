@@ -61,6 +61,7 @@
 }
 .text{
     position: relative;
+    height: 52px;
 }
 .text input{
     width: 218px;
