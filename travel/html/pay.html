@@ -12,6 +12,15 @@
     <script src="../js/pay/jquery-1.10.2.min.js"></script>
     <script src="../js/pay/order_ticket.js"></script>
     <script src="../js/pay.js"></script>
+    <script src="../js/layDate-v5.0.9/laydate/laydate.js"></script>
+    <script>
+        lay('#version').html('-v' + laydate.v);
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#today' //指定元素,即你要输入的框的id号即可
+        });
+    </script>
 
 </head>
 <script src="../travel/js/jquery.js"></script>
@@ -32,7 +41,7 @@
         </div>
         <div class="center">
             <h1 class="logo">
-                <a href="index.html" id="logoA">乐途旅行网</a>
+                <a href="../index.html" id="logoA">乐途旅行网</a>
             </h1>
         </div>
     </header>
@@ -205,12 +214,14 @@
                         </dl>
                         <dl>
                             <dt>游玩日期：</dt>
-                            <dd><input type="hidden" id="today" value="2019-06-15"><label
-                                    class="input_order_date J_input_order_date"><input id="start_time"
-                                        name="travel_date" type="text"
-                                        data-price="2019-06-16|98,2019-06-22|98,2019-06-23|98,2019-06-29|98,2019-06-30|98,2019-07-01|98,2019-07-02|98,2019-07-03|98,2019-07-04|98,2019-07-05|98,2019-07-06|98,2019-07-07|98,2019-07-08|98,2019-07-09|98,2019-07-10|98,2019-07-11|98,2019-07-12|98,2019-07-13|98,2019-07-14|98,2019-07-15|98,2019-07-16|98,2019-07-17|98,2019-07-18|98,2019-07-19|98,2019-07-20|98,2019-07-21|98,2019-07-22|98,2019-07-23|98,2019-07-24|98,2019-07-25|98,2019-07-26|98,2019-07-27|98,2019-07-28|98,2019-07-29|98,2019-07-30|98,2019-07-31|98,2019-08-01|98,2019-08-02|98,2019-08-03|98,2019-08-04|98,2019-08-05|98,2019-08-06|98,2019-08-07|98,2019-08-08|98,2019-08-09|98,2019-08-10|98,2019-08-11|98,2019-08-12|98,2019-08-13|98,2019-08-14|98,2019-08-15|98,2019-08-16|98,2019-08-17|98,2019-08-18|98,2019-08-19|98,2019-08-20|98,2019-08-21|98,2019-08-22|98,2019-08-23|98,2019-08-24|98,2019-08-25|98,2019-08-26|98,2019-08-27|98,2019-08-28|98,2019-08-29|98,2019-08-30|98,2019-08-31|98"
-                                        data-min_date="2019-06-16" data-max_date="2019-08-31" class=""
-                                        value="2019-06-16"></label></dd>
+                            <dd>
+                                <input type="text" id="today" value="2019-06-15" class="demo-input" placeholder="请选择日期">
+                                <label
+                                    class="input_order_date J_input_order_date">
+                                    <!-- <input id="start_time"
+                                    class="demo-input" placeholder="请选择日期"></label></dd> -->
+                                </label>
+                            </dd>
                         </dl>
                         <dl>
                             <dt>门票数量：</dt>

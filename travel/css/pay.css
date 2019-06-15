@@ -190,6 +190,7 @@ dl {
     padding: 0 3px;
     border: 1px solid #d7d6d6;
     vertical-align: middle;
+    height: 25px;
 }
 input {
     padding: 1px 0px;
