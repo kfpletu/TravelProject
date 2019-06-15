@@ -1,8 +1,6 @@
 @charset "utf-8";
 
 a:hover{
-    /*注销了超链接的悬停时的,绿色背景效果*/
-    /* background-color: aliceblue; */
     color: #fff;
 }
 #headline {
@@ -155,7 +153,6 @@ a:hover{
     margin: 0 0 20px 0;
     background-color: #eee;
 }
-
 #container .infor .left {
     /* list-style: none; */
     float: left;
@@ -183,7 +180,9 @@ a:hover{
     display: block;
     color: #666;
     text-align: center;
-
+}
+#container .infor .left a:hover{
+    background: #458b00;
 }
 
 /* 右边 */
