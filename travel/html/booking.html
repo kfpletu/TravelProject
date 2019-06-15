@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="stylesheet" href="../css/basic.css">
+</head>
+<script src="../js/jquery.js"></script>
+<script src="../js/booking.js"></script>
+<body>
+    <header id="header">
+        <div class="login">
+
+            <b><div id="cart"><a href="">个人信息</a></div></b>
+        </div>
+        <div class="center">
+            <h1 class="logo">
+                <a href="../index.html" id="logoA">乐途旅行网</a>
+            </h1>
+            
+            <nav>
+                <ul class="link">
+                    <h1 class="none">网站导航</h1>
+                    <li class="active"><a href="../index.html">首页</a></li>
+                    <li><a href="information.html">景点门票</a></li>
+                    <li><a href="order.html">交通出行</a></li>
+                    <li><a href="order_hotel.html">酒店预定</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+            </nav>
+            
+        </div>   
+    </header>
+    <div id="main">
+        <!--购物车顶部标签-->
+        <h2>
+            购物车
+        </h2>
+        <!--购物车商品展示-->
+        <div class="info">
+            <!--顶部的工具栏-->
+            <div class="type">
+                <div class="check">
+                    <img src="../img/booking/product_normal.png" class="checkAll">全选
+                </div>
+                <div class="gname">商品</div>
+                <div class="gprice">单价(元)</div>
+                <div class="gcount">数量</div>
+                <div class="gsum">金额</div>
+                <div class="action">操作</div>
+        </div>
+        <!--商品展示-->
+        <div id="content">
+            <!--商品记录-->
+            <div class="item">
+                <div class="check">
+                    <img src="../img/booking/product_normal.png" class="checkItem">
+                </div>
+                <div class="gname">
+                    <img src="../img/booking/regist.png">
+                    <p>90分旅行箱</p>
+                    <p>规格: 20寸</p>
+                    <p>颜色: 星空灰</p>
+                </div>
+                <div class="gprice">
+                    <h3>皮粉专享价</h3>
+                    <p>¥ 299.00</p>
+                </div>
+                <div class="gcount">
+                    <!--阻止超链接默认事件-->
+                    <a href="javascript:void(0)" class="minus">-</a>
+                    <input type="text" value="1">
+                    <a href="javascript:void(0)" class="add">+</a>
+                </div>
+                    <div class="gsum">￥ 299.00</div>    
+                    <div class="action">删除</div>
+                </div>   
+            </div>
+        </div>
+        <div class="balance">
+            <div>
+                <b>账户余额:</b>
+                <span>00</span>
+                <b>元</b>
+            </div>
+        </div>
+        <div class="result">
+            <p>
+                <span>
+                    已选择:
+                    <b class="total-num">0</b>
+                    件商品
+                </span>
+                <span>
+                    共计:
+                    <b class="total-price">0.00</b>
+                    元
+                </span>
+                <span calss="sub">
+                    <input type="submit" value="结算">
+                </span>
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="top">
+            <div class="block left">
+                <h2>合作伙伴</h2>
+                <hr>
+                <p><a href="http://www.tuniu.com">途牛旅游网</a></p>
+                <p><a href="http://www.lvmama.com">驴妈妈旅游网</a></p>
+                <p><a href="http://www.ctrip.com">携程旅行网</a></p>
+                <p><a href="http://www.cytsonline.com">中国青年旅行社</a></p>
+            </div>
+            <div class="block center">
+                <h2>旅游 FAQ</h2>
+                <hr>
+                <p><a href="../travel/html/travelContract.html">旅游合同签订方式？</a></p>
+                <p><a href="../travel/html/childPrice.html">儿童价是基于什么制定的？</a></p>
+                <p><a href="../travel/html/touristRoute.html">旅游的线路品质怎么界定的？</a></p>
+                <p><a href="../travel/html/singleRoom.html">单房差是什么？</a></p>
+                <p><a href="../travel/html/travelInsuranceCategory.html">旅游保险有那些种类？</a></p>
+            </div>
+            <div class="block right">
+                <h2>联系方式</h2>
+                <hr>
+                <ul>
+                    <li>微博：weibo.com/letu</li>
+                    <li>邮件：letu@letu.com</li>
+                    <li>地址：陕西西安碑林区中铁第一国际9层</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">Copyright ©LT 乐途旅行网 | 陕ICP备120110109号 | 旅行网经营许可证： L-LT-BK12345</div>
+    </div>
+</body>
+
+</html>
