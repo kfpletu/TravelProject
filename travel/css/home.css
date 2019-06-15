@@ -135,6 +135,7 @@
     border-radius: 4px;
     text-align: left;
     width: 380px;
+    height: 255px;
     position: relative;
     margin: 15px 12px;
 }
@@ -147,20 +148,25 @@
 #tour figure img {
     vertical-align: middle;
     width: 380px;
+    height: 255px;
 }
 
 #tour figcaption {
     color: #777;
     font-size: 14px;
-    padding: 7px 0 5px 0;
+    padding: 5px 0 0 0;
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 1.5x;
+    height: 42px;
+    overflow: auto;
 }
 
 #tour .title {
     color: #333;
     font-weight: normal;
+    
 }
+
 
 #tour .sat {
     float: right;
@@ -178,7 +184,7 @@
 }
 
 #tour .price strong {
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
