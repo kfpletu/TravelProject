@@ -9,7 +9,6 @@ $(function(){
 
 	})
 	$('#container .new li a:first').mouseover(function(){
-		console.log('11')
 		$('.hotel_figure').css('display','block')
 	})
 	$('#container .new li a:gt(0)').mouseover(function(){
@@ -20,6 +19,54 @@ $(function(){
 				elems.eq(i).parent().css('display','block')
 			}
 		}
-	})	
+	})
+	var listBoxMarginH=0;
+	var timerH=setInterval(function(){
+		listBoxMarginH-=2;
+		// console.log(listBoxMargin+'px')
+		$('.brandListBox:first').css('margin-left',(listBoxMarginH+'px'))
+		if (listBoxMarginH<-1400) {
+			listBoxMarginH=0;
+		}
+	},100)
+
+	$('.brandListBox:first').mouseover(function(){
+		clearInterval(timerH)
+	})
+	$('.brandListBox:first').mouseout(function(){
+		timerH=setInterval(function(){
+		listBoxMarginH-=2;	
+		$('.brandListBox:first').css('margin-left',(listBoxMarginH+'px'))
+		if (listBoxMarginH<-1400){
+			listBoxMarginH=0;
+		}
+	},100)
+	})
+
+	var listBoxMarginF=0;
+	var timerF=setInterval(function(){
+		listBoxMarginF-=2;
+		// console.log(listBoxMargin+'px')
+		$('.brandListBox:last').css('margin-left',(listBoxMarginF+'px'))
+		if (listBoxMarginF<-1400) {
+			listBoxMarginF=0;
+		}
+	},100)
+
+	$('.brandListBox:last').mouseover(function(){
+		cursor = 'vertical-text'
+		clearInterval(timerF)
+	})
+
+	$('.brandListBox:last').mouseout(function(){
+		timerF=setInterval(function(){
+		listBoxMarginF-=2;	
+		$('.brandListBox:last').css('margin-left',(listBoxMarginF+'px'))
+		if (listBoxMarginF<-1400) {
+			listBoxMarginF=0;
+		}
+	},100)
+	})
+		
 
 })
