@@ -188,7 +188,7 @@ a:hover{
 
 /* 右边 */
 #container .infor .right li {
-    width: 60px;
+    width: 80px;
     height: 45px;
     line-height: 45px;
     font-size: 16px;
@@ -222,6 +222,8 @@ a:hover{
 #container .list .tour img {
     float: left;
     height: 230px;
+    width:350px;
+
 }
 
 #container .list .tour figcaption {
@@ -322,7 +324,7 @@ a:hover{
 }
 
 #container .list .tour .type {
-    width: 90px;
+    width: 130px;
     height: 25px;
     line-height: 25px;
     /* 垂直居中 */
@@ -339,7 +341,7 @@ a:hover{
 #container .list .tour footer {
 
     width: 528px;
-    height: 35px;
+    height: 30px;
     line-height: 35px;
     text-indent: 25px;
     color: #666;
