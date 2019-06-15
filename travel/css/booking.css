@@ -7,7 +7,7 @@
 }
 #content{
     width: 1200px;
-    height: 520px;
+    height: 1040px;
     border: 1px solid #333;
 }
 
@@ -34,13 +34,18 @@
     width: 1200px;
     height:50px;
     margin-top:20px;
-    background:crimson;
+    background-color: #f1f3f4;
+    position: fixed;
+    bottom: 100px;
+    
 }
 .result input{
     width: 150px;
     height: 50px;
     font-size: 24px;
-    float: right;
+    background: gray;
+    border: none;  
+    float: right
 }
 #main .balance{
     margin-top: 20px;
@@ -74,24 +79,31 @@
 }
 .check{
     width: 6%;
+    background-color: #f1f3f4;
 }
 .gname{
     width: 37%;
+    background-color: #f1f3f4;
 }
 .gprice{
     width: 16%;
+    background-color: #f1f3f4;
 }
 .gcount{
     width: 15%;
+    background-color: #f1f3f4;
 }
 .gsum{
     width: 13%;
+    background-color: #f1f3f4;
 }
 .action{
     width: 13%;
+    background-color: #f1f3f4;
 }
 .checkAll{
     vertical-align: middle;
+    background-color: #f1f3f4;
 }
 /*2.2商品展示*/
 #content{
@@ -161,4 +173,10 @@
 }
 .gcount .minus{
     margin-left: 35px;
+}
+.bottom{
+    height: 50px;
+    text-align: center;
+    color: gray;
+    font-size: 16px;
 }

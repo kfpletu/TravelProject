@@ -52,10 +52,11 @@ $(function(){
         $(this).next().val(value);
         countPrice($(this),value)
         sum();
-    }) 
+    })
+
     $("main .result input").click(function(){
         confirm("是否要结算？")
-    }) 
+    })
 })
 function countPrice(that,value){
     //价格联动 单价*数量 ，修改总金额
@@ -84,13 +85,16 @@ function sum(){
         var p = $(this).parents(".item").find(".gsum").html();
         //转number
         n = Number(n);
-        console.log(p)
         p = Number(p.substring(2));
-        console.log(p)
         num += n;
         price += p;
         
     })
     $(".total-num").html(num);
     $(".total-price").html(price);
+    if($(".checkItem[checked]").length){
+        $(".result input").css("background","red")
+    }else{
+        $(".result input").css("background","gray")
+    } 
 }
