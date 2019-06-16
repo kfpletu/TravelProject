@@ -53,14 +53,23 @@ $(function(){
         countPrice($(this),value)
         sum();
     })
-
+    //结算确认框
     $("#main .result input").click(function(){
-        console.log($("#main .result .total-price").html())
         if($("#main .result .total-price").html()!=0.00){
-            confirm("是否要结算？")
+            $("#box1").css("display","block");
         }else{
-            confirm("没有要结算的订单........")
+            $("#box2").css("display","block");
+            setTimeout(function(){
+                $("#box2").css("display","none");
+            },2000)
         }
+    })
+    $("#box1 button").click(function(){
+        $("#box1").css("display","none");
+        $("#content .wait").css("display","block");
+        setTimeout(function(){
+            $("#content .wait").css("display","none")//删除
+        },2000)
     })
 })
 function countPrice(that,value){
