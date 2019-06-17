@@ -59,6 +59,7 @@
     font-size:20px;
     color:#000;
     margin:0 15px;
+    margin-left: 0;
 }
 #bodytickrt .daohang a:hover{
     color: white;
@@ -179,6 +180,7 @@
     font-size:20px;
     color:#000;
     margin:0 15px;
+    margin-left: 0;
 }
 #guid .daohang a:hover{
     color: white;
@@ -209,7 +211,22 @@
     font-style: normal;
     background:#00bf4b
 }
+.c-wrapper-style #map_td{
+    float: right;
+    margin-right: 50px;
+}
 #smap{
     width:1200px;
     height:500px;
+}
+#allmap{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-align: center;
+}
+
+#bodytickrt .count span b{
+    color: #551A8B;
 }
