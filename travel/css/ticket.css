@@ -209,6 +209,10 @@
     font-style: normal;
     background:#00bf4b
 }
+.c-wrapper-style #map_td{
+    float: right;
+    margin-right: 50px;
+}
 #smap{
     width:1200px;
     height:500px;
