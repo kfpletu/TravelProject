@@ -10,6 +10,7 @@
     width: 1200px;
     height: 1040px;
     border: 1px solid #333;
+    position: relative;
 }
 
 #main>h2{
@@ -114,7 +115,6 @@
 /*2.2商品展示*/
 #content{
     margin-top: 20px;
-    position: relative;
 }
 .item{
     height: 115px;
@@ -191,8 +191,8 @@
     width: 400px;
     height: 200px;
     background: orange;
-    position: absolute;
-    margin-top: 80px;
+    position: fixed;
+    margin-top: 20px;
     margin-left: 400px;
 }
 #content .wait{
