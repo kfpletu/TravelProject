@@ -363,3 +363,7 @@ a:hover{
     cursor: pointer;
     background-color: #fafafa
 }
+.figure figure img{
+    width: 150px;
+    height: 120px;
+}
