@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车</title>
-    <link rel="stylesheet" href="../css/base.css">
+    <!-- <link rel="stylesheet" href="../css/base.css"> -->
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/booking.css">
     <link rel="stylesheet" href="../css/basic.css">
@@ -80,65 +80,53 @@
                 </div>
                     <div class="gsum">￥ 299.00</div>    
                     <div class="action">删除</div>
-                </div>   
+                </div>
+                <div id="box1">
+                    <p>是否要结算？</p>
+                    <button>是</button>
+                    <button>否</button>
+                </div>
+                <div id="box2">
+                    <p>没有要结算的订单!!</p>
+                </div> 
+                <img src="../img/booking/wait.jpg" class="wait">  
             </div>
         </div>
-        <div class="balance">
-            <div>
-                <b>账户余额:</b>
-                <span>00</span>
-                <b>元</b>
+        <div id="checkout">
+            <div class="balance">
+                <div>
+                    <b>账户余额:</b>
+                    <b>
+                        <span>0.00</span>
+                    </b>
+                    <b>元</b>
+                </div>
             </div>
-        </div>
-        <div class="result">
-            <p>
-                <span>
-                    已选择:
-                    <b class="total-num">0</b>
-                    件商品
-                </span>
-                <span>
-                    共计:
-                    <b class="total-price">0.00</b>
-                    元
-                </span>
-                <span calss="sub">
-                    <input type="submit" value="结算">
-                </span>
-            </p>
+            <div class="result">
+                <p>
+                    <span>
+                        已选择:
+                        <b class="total-num">0</b>
+                        件商品
+                    </span>
+                    <span>
+                        共计:
+                        <b class="total-price">0.00</b>
+                        元
+                    </span>
+                    <span calss="sub">
+                        <input type="submit" value="结算">
+                    </span>
+                </p>
+            </div>
         </div>
     </div>
-    <div id="footer">
-        <div class="top">
-            <div class="block left">
-                <h2>合作伙伴</h2>
-                <hr>
-                <p><a href="http://www.tuniu.com">途牛旅游网</a></p>
-                <p><a href="http://www.lvmama.com">驴妈妈旅游网</a></p>
-                <p><a href="http://www.ctrip.com">携程旅行网</a></p>
-                <p><a href="http://www.cytsonline.com">中国青年旅行社</a></p>
-            </div>
-            <div class="block center">
-                <h2>旅游 FAQ</h2>
-                <hr>
-                <p><a href="../travel/html/travelContract.html">旅游合同签订方式？</a></p>
-                <p><a href="../travel/html/childPrice.html">儿童价是基于什么制定的？</a></p>
-                <p><a href="../travel/html/touristRoute.html">旅游的线路品质怎么界定的？</a></p>
-                <p><a href="../travel/html/singleRoom.html">单房差是什么？</a></p>
-                <p><a href="../travel/html/travelInsuranceCategory.html">旅游保险有那些种类？</a></p>
-            </div>
-            <div class="block right">
-                <h2>联系方式</h2>
-                <hr>
-                <ul>
-                    <li>微博：weibo.com/letu</li>
-                    <li>邮件：letu@letu.com</li>
-                    <li>地址：陕西西安碑林区中铁第一国际9层</li>
-                </ul>
-            </div>
-        </div>
-        <div class="bottom">Copyright ©LT 乐途旅行网 | 陕ICP备120110109号 | 旅行网经营许可证： L-LT-BK12345</div>
+    <div class="bottom">
+        <p>Copyright ©LT 乐途旅行网 | 陕ICP备120110109号 | 旅行网经营许可证： L-LT-BK12345</p>
+        <img src="../img/booking/pic.gif" title="站长统计">
     </div>
+    
+    
 </body>
 
 </html>

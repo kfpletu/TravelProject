@@ -52,10 +52,25 @@ $(function(){
         $(this).next().val(value);
         countPrice($(this),value)
         sum();
-    }) 
-    $("main .result input").click(function(){
-        confirm("是否要结算？")
-    }) 
+    })
+    //结算确认框
+    $("#main .result input").click(function(){
+        if($("#main .result .total-price").html()!=0.00){
+            $("#box1").css("display","block");
+        }else{
+            $("#box2").css("display","block");
+            setTimeout(function(){
+                $("#box2").css("display","none");
+            },2000)
+        }
+    })
+    $("#box1 button").click(function(){
+        $("#box1").css("display","none");
+        $("#content .wait").css("display","block");
+        setTimeout(function(){
+            $("#content .wait").css("display","none")//删除
+        },2000)
+    })
 })
 function countPrice(that,value){
     //价格联动 单价*数量 ，修改总金额
@@ -84,13 +99,16 @@ function sum(){
         var p = $(this).parents(".item").find(".gsum").html();
         //转number
         n = Number(n);
-        console.log(p)
         p = Number(p.substring(2));
-        console.log(p)
         num += n;
         price += p;
         
     })
     $(".total-num").html(num);
     $(".total-price").html(price);
+    if($(".checkItem[checked]").length){
+        $(".result input").css("background","red")
+    }else{
+        $(".result input").css("background","gray")
+    } 
 }
