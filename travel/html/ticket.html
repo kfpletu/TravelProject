@@ -5,59 +5,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>景点门票-限时特价</title>
-    <link rel="stylesheet" href="../css/information.css">
+    <title>ticket</title>
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/basic.css">
-    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../css/ticket.css">
 </head>
+<script src="../js/jquery.js"></script>
+<script src="../js/home_banner.js"></script>
+<script src="../js/ticket/order.js"></script>
+
 <body>
+    <header id="header">
+        <div class="login">
+            <b>
+                <div id="cart"><a href="">我的订单</a></div>
+            </b>
+            <b>
+                <div id="register"><a href="../travel/html/register.html">免费注册</a></div>
+            </b>
+            <b>
+                <div id="login"><a href="../travel/html/login.html">您好,请登录</a></div>
+            </b>
+        </div>
+        <div class="center">
+            <h1 class="logo">
+                <a href="index.html" id="logoA">乐途旅行网</a>
+            </h1>
 
+            <nav>
+                <ul class="link">
+                    <h1 class="none">网站导航</h1>
+                    <li class="active"><a href="../index.html">首页</a></li>
+                    <li><a href="information.html">景点门票</a></li>
+                    <li><a href="order.html">交通出行</a></li>
+                    <li><a href="order_hotel.html">酒店预定</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-
-
-
-    <!-- <div class="brief-left"></div>
-
-<div class="brief-right" data-reactid="37">
-    <h2 data-reactid="38">雁塔故事</h2>
-    <span class="spot-grade invisible" data-reactid="39">
-        <strong data-reactid="40"></strong>
-        <!-- react-tex 景区ct-text -->
-    <!-- </span>
-    <ul data-reactid="42">
-        <li data-reactid="43">
-            <em data-reactid="44">景点地址</em>
-            <span data-reactid="45">西安市雁塔区雁塔南路480号</span>
-            <a class="map-icon" href="javascript:void(0);" data-reactid="46">
-                <i data-reactid="47"></i>
-                <!-- react-text: 48 查看地图 /react-text -->
-            <!-- </a>
-        </li>
-        <li class="time " data-reactid="49">
-            <em data-reactid="50">开放时间</em>
-            <span data-reactid="51">全年  11:00-23:00。</span>
-        </li>
-        <li class="promise">
-            <em>服务承诺</em>
-            <div class="show-promise-detail">
-                <span>如实描述</span>
-                <span>低价保障</span>
-                <span>入园保障</span>
-                <span>特殊退订保障</span>
-            </div>
-        </li>
-    </ul>
-    <div class="score" data-reactid="52">
-        <span data-reactid="53">
-            <span class="score-star" data-reactid="54">
-                <i style="width:60%;" data-reactid="55"></i>
-            </span>
-            <i class="num" data-reactid="56">3</i>
-            <span class="total" data-reactid="57">/5分</span>
-        </span>
-        <a href="javascript:void(0);" data-reactid="58">查看1条点评</a>
+    <div id="bodyer1">
+        <div class="imgs">
+            <img src="../img/info/qinlingdongwuyuan.jpg" alt="图片加载中">
+        </div>
+        <div class="sDetails">
+            <h1>秦岭野生动物园</h1>
+            <table class="table">
+                <tr>
+                    <td style="width: 100px">AAAA</td>
+                    <td>景区</td>
+                </tr>
+                <tr>
+                    <td>景点地址</td>
+                    <td>陕西省西安市长安区滦镇</td>
+                    <td><a href="#JTZN"> <img src="../img/info/timg.jpg"> 查看地图</a></td>
+                </tr>
+                <tr>
+                    <td>开放时间</td>
+                    <td colspan="2">1月1日-2月28日（淡季） 09:00-17:00；3月1日-10月31日（旺季） 09:00-17:30；11月1日-12月31日（淡季） 09:00-17:00。
+                        秦岭野生动物园虫虫乐园：全年 09:30-17:00；最晚入园时间：17:00。</td>
+                </tr>
+                <tr>
+                    <td>景点主题</td>
+                    <td colspan="2">动物园　游乐场</td>
+                </tr>
+                <tr>
+                    <td>服务承诺</td>
+                    <td colspan="2">让您的旅途更快乐</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan=class="tdlast">-------&nbsp;&nbsp;乐途旅行</td>
+                </tr>
+            </table>
+        </div>
     </div>
-</div> --> 
 
+    <div id="bodytickrt">
+        <div class=daohang style="background:orange;">
+            <a href="##">门票订购</a>
+            <a href="order_hotel.html">周围酒店</a>
+        </div>
+
+        <div class=count>
+
+            <span>
+                已预定：
+                <b class="total-num">0</b>
+                张门票 &nbsp&nbsp&nbsp
+                共计：
+                <b class="total-price">0.00</b>
+                元
+                <a href="##">预定</a>
+            </span>
+
+        </div>
+
+        <div class="info">
+            <!--顶部工具栏-->
+            <div class="type">
+                <div class="check">
+                    <img src="../img/cart/product_normal.png" class="checkAll">
+                    全选
+                </div>
+                <div class=gper>人员</div>
+                <div class="gname">景点名称</div>
+                <div class=gpt>提前预定时间</div>
+                <div class="gprice">单价（元）</div>
+                <div class="gcount">数量</div>
+                <div class="gsum">金额</div>
+            </div>
+
+            <div class="conten">
+                <!--购票信息-->
+                <div class="item">
+                    <div class="check">
+                        <img src="../img/cart/product_normal.png" class="checkItem">
+                    </div>
+                    <div class="gper">
+                        <p>成人票</p>
+                    </div>
+                    <div class="gname">
+                        <p>秦岭野生动物园成人票</p>
+                    </div>
+                    <div class="gpt">
+                        <p>当天15:00前可订</p>
+                    </div>
+                    <div class="gprice">
+                        <p>￥ 80.00</p>
+                    </div>
+                    <div class="gcount">
+                        <!--阻止超链接默认事件-->
+                        <a href="javascript:void(0)" class="minus">-</a>
+                        <input type="text" value="0">
+                        <a href="javascript:void(0)" class="add">+</a>
+                    </div>
+                    <div class="gsum">￥0.00</div>
+                </div>
+
+                <div class="item">
+                    <div class="check">
+                        <img src="../img/cart/product_normal.png" class="checkItem">
+                    </div>
+                    <div class="gper">
+                        <p>儿童票</p>
+                    </div>
+                    <div class="gname">
+                        <p>秦岭野生动物园儿童票</p>
+                    </div>
+                    <div class="gpt">
+                        <p>当天15:00前可订</p>
+                    </div>
+                    <div class="gprice">
+                        <p>￥ 40.00</p>
+                    </div>
+                    <div class="gcount">
+                        <!--阻止超链接默认事件-->
+                        <a href="javascript:void(0)" class="minus">-</a>
+                        <input type="text" value="0">
+                        <a href="javascript:void(0)" class="add">+</a>
+                    </div>
+                    <div class="gsum">￥ 0.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id=guid>
+        <div class=daohang style="background:orange;">
+            <a href="##">景点简介</a>
+            <a href="#JTZN">交通指南</a>
+        </div>
+        <div class="produce_con">
+            <p><span style="font-size: 12px;">&nbsp;
+                    &nbsp;&nbsp;秦岭野生动物园地处秦岭北麓浅山地带，距西安市区28公里，由西安旅游集团投资建设的西北地区首家野生动物园，是国家AAAA级旅游景区、全国野生动物保护科普教育基地、全国青年文明号。
+                    秦岭野生动物园是陕西省和西安市“十五”重点建设项目，总投资3.95亿，于2004年5月1日开放。全园占地2600余亩，展养着以秦岭四大“名旦”——大熊猫、羚牛、金丝猴、朱鹮为特色，以及来自世界各地具有代表性的野生动物共300多种、10000余头（只）。景区绿树环抱，丰草长林，与连绵起伏、千峰碧屏的秦岭山脉融为一体，徜徉在丛林与花径之间，听百鸟与清风唱和，看猛兽与群山相伴，令人心旷神怡。&nbsp;
+                </span></p>
+            <p><span style="font-size: 12px;"> &nbsp;
+                    &nbsp;&nbsp;可容纳3000多人同时观看的马戏大世界、海洋动物表演馆、鸟类动物表演场、广场欢乐大戏台为游客免费提供精彩纷呈、惊险刺激的动物和歌舞表演。 </span></p>
+            <p><span style="font-size: 12px;"> &nbsp;
+                    &nbsp;&nbsp;设计新颖的科普馆和倾心为儿童建设的小小动物乐园，是青少年朋友与野生动物亲密接触，探索野生动物世界，培养人与动物和谐相处的欢乐天堂。
+                    江泽民、李瑞环等中央领导同志以及新西兰前总理珍妮·西普利女士都曾专程来园视察。江泽民同志游览后兴致勃勃地说：“值得一看，不虚此行”，并欣然题词留念。开园五年来西野人大力倡导“把欢乐送给人民，将欢乐进行到底”的旅游文化理念，已累计接待国内外游客300多万人次，被誉为西安人的后花园、西安人的天然氧吧、西安人的欢乐谷、西安人的郊游胜地。
+                    秦岭野生动物园地处秦岭北麓浅山地带，距西安市区28公里，由西安旅游集团投资建设的西北地区首家野生动物园，是国家AAAA级旅游景区、全国野生动物保护科普教育基地、全国青年文明号。
+                    秦岭野生动物园是陕西省和西安市“十五”重点建设项目，总投资3.95亿，于2004年5月1日开放。全园占地2600余亩，展养着以秦岭四大“名旦”——大熊猫、羚牛、金丝猴、朱鹮为特色，以及来自世界各地具有代表性的野生动物共300多种、10000余头（只）。景区绿树环抱，丰草长林，与连绵起伏、千峰碧屏的秦岭山脉融为一体，徜徉在丛林与花径之间，听百鸟与清风唱和，看猛兽与群山相伴，令人心旷神怡。
+                    可容纳3000多人同时观看的马戏大世界、海洋动物表演馆、鸟类动物表演场、广场欢乐大戏台为游客免费提供精彩纷呈、惊险刺激的动物和歌舞表演。
+                    设计新颖的科普馆和倾心为儿童建设的小小动物乐园，是青少年朋友与野生动物亲密接触，探索野生动物世界，培养人与动物和谐相处的欢乐天堂。
+                    江泽民、李瑞环等中央领导同志以及新西兰前总理珍妮·西普利女士都曾专程来园视察。江泽民同志游览后兴致勃勃地说：“值得一看，不虚此行”，并欣然题词留念。开园五年来西野人大力倡导“把欢乐送给人民，将欢乐进行到底”的旅游文化理念，已累计接待国内外游客300多万人次，被誉为西安人的后花园、西安人的天然氧吧、西安人的欢乐谷、西安人的郊游胜地。
+                </span></p>
+            <p><span style="font-size: 12px;"> <strong>园内分区</strong> </span></p>
+            <p><span style="font-size: 12px;"> <strong>猛兽区</strong> </span></p>
+            <p><span style="font-size: 12px;"> &nbsp;
+                    &nbsp;&nbsp;他们是动物王国当仁不让的王者，不怒自威的眼神，极具穿透力的吼叫，让你在十米开外就能感受到他们外露的霸气！有兽中之王美称的东北虎和非洲狮，有陆地上的短跑冠军猎豹，有憨态可掬的棕熊、黑熊，有捕猎能手三色犬，还有狡黠和贪婪的西北狼。
+                </span></p>
+            <p><span style="font-size: 12px;"> <strong>草食动物区</strong> </span></p>
+            <p><span style="font-size: 12px;"> &nbsp;
+                    &nbsp;&nbsp;园内草食动物种类丰富，有原产亚洲的麋鹿、亚洲象、骆驼、梅花鹿、羚羊、蒙古野驴等“贵族”，也有原产于非洲的长颈鹿、非洲象、白犀牛、斑马等“明星”，还有原产于澳洲的赤大袋鼠、红颈袋鼠等“珍宝”！他们在这里快乐的生活，繁衍生息，部分已经形成庞大物种！西部散养的是产于亚洲的食草动物，有我国特有的白唇鹿、塔尔羊、麋鹿、牦牛等。<br>
+                    <strong>灵长、禽鸟区</strong> </span></p>
+            <p><span style="font-size: 12px;"> &nbsp;
+                    &nbsp;&nbsp;飞禽大观里鸟语花香，名禽荟萃！漫步在鸟的世界里，气质高雅的黑天鹅，雍容华贵的金刚鹦鹉，淡定儒雅的白天鹅！犹如仙女下凡的孔雀，还有数十种色彩斑斓的鹦鹉，让您流连忘返！可爱的黑猩猩的各种表情与动作让人忍俊不禁！<br>
+                </span></p>
+            <p><span style="font-size: 12px;"> <strong>园内看点</strong> </span></p>
+            <p><span style="font-size: 12px;"> <strong>长颈鹿馆</strong><br>
+                    &nbsp;
+                    &nbsp;&nbsp;长颈鹿是一种生长在非洲的反刍偶蹄动物，是世界上最高的陆生动物。雄性个体高达4.8到5.5米高，重达900公斤。雌性个体一般要小一些。主要分布在非洲的埃塞俄比亚、苏丹、肯尼亚、坦桑尼亚和赞比亚等国，生活在非洲热带、亚热带广阔的草原上。但是，长颈鹿的祖籍却在亚洲。据古生物学家研究认为，长颈鹿起源于亚洲。<br>
+                    &nbsp; &nbsp; 动物园中最高的动物馆舍，其高度超过7米，框架式结构，占地面积1700平方米。馆舍内部除了三间互通的笼舍外还设有锅炉房、草库、管理间、饲养操作间以及室外缓冲区。<br>
+                    <strong>白虎馆</strong> </span></p>
+            <p><span style="font-size: 12px;"> &nbsp; &nbsp;&nbsp;白虎是孟加拉虎的白色变种，原产于中国云南、缅甸、印度及孟加拉等地。属于哺乳纲，食肉目，猫科，豹属。<br>
+                    &nbsp; &nbsp; 野生白虎已经灭绝，现在的白虎都是人工繁殖的。东北虎也有发现白色变种，仅有俄罗斯、美国、韩国、日本和朝鲜等国家少量饲养过。<br>
+                    &nbsp; &nbsp;&nbsp;生活于森林山地等环境中，单独生活，夜行。主要以有蹄类为食。没有固定繁殖季节，3—4岁性成熟，孕期100—106天，每胎2—4仔。寿命约20年<br>
+                    <strong>河马馆</strong><br>
+                    &nbsp; &nbsp; 河马（学名：Hippopotamus
+                    amphibius）淡水物种中的最大型杂食性哺乳类动物，是生物分类法里河马科中的两个延伸物种的其中一个（另一个是倭河马）。原来遍布非洲所有深水的河流与溪流中，现在范围已缩小，主要居住在非洲热带的河流间。它们喜欢栖息在河流附近沼泽地和有芦苇的地方。生活中的觅食、交配、产仔、哺乳也均在水中进行，是世界上嘴巴最大的陆生哺乳动物。<br>
+                    <strong>海洋馆</strong><br>
+                    &nbsp; &nbsp;&nbsp;这些在海洋里的神奇精灵是人类最好的朋友！畅游大海的精灵海狮，温顺可爱的海豚，精彩的表演，闪耀着晶盈水光的奇幻画面，让你一生难忘！</span><span><br>
+                    <br>
+                </span></p>
+        </div>
+        <div id="JTZN">
+            <div class="c-wrapper-style">
+                <i class="detail-icon-3">交通指南</i>
+            </div>
+            <div id="smap">
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="top">
+            <div class="block left">
+                <h2>合作伙伴</h2>
+                <hr>
+                <p><a href="http://www.tuniu.com">途牛旅游网</a></p>
+                <p><a href="http://www.lvmama.com">驴妈妈旅游网</a></p>
+                <p><a href="http://www.ctrip.com">携程旅行网</a></p>
+                <p><a href="http://www.cytsonline.com">中国青年旅行社</a></p>
+            </div>
+            <div class="block center">
+                <h2>旅游 FAQ</h2>
+                <hr>
+                <p><a href="../travel/html/travelContract.html">旅游合同签订方式？</a></p>
+                <p><a href="../travel/html/childPrice.html">儿童价是基于什么制定的？</a></p>
+                <p><a href="../travel/html/touristRoute.html">旅游的线路品质怎么界定的？</a></p>
+                <p><a href="../travel/html/singleRoom.html">单房差是什么？</a></p>
+                <p><a href="../travel/html/travelInsuranceCategory.html">旅游保险有那些种类？</a></p>
+            </div>
+            <div class="block right">
+                <h2>联系方式</h2>
+                <hr>
+                <ul>
+                    <li>微博：weibo.com/letu</li>
+                    <li>邮件：letu@letu.com</li>
+                    <li>地址：陕西西安碑林区中铁第一国际9层</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright ©LT 乐途旅行网 | 陕ICP备120110109号 | 旅行网经营许可证： L-LT-BK12345</p>
+            <img src="./img/booking/pic.gif" title="站长统计">
+        </div>
+    </footer>
 </body>
-</html>    
+
+</html>

@@ -55,8 +55,24 @@ $(function(){
             liList[index].style.background = "#fff";
             imgList[index].style.display = "block";
             imgList[liList.length-1].style.display = "none"
-        }    
+        }
     })
+    for(var i=0;i<imgList.length;i++){
+        $(liList[i]).click(function(){
+            $(this).css("background","#fff");
+            liList[index].style.background = "rgba(0,0,0,0)"
+            imgList[index].style.display = "none";
+            for(var j=0;j<liList.length;j++){
+                //点击后同步更改下标
+                if(liList[j].style.background=="rgb(255, 255, 255)"){
+                    index = j;
+                    console.log(index)
+                }
+            }
+            imgList[index].style.display = "block";    
+        })
+    }
+
     $("#tour #search2 img").mouseover(function(){
         $(this).attr('src',"./img/home_banner/search2.png")
     })
