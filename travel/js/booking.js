@@ -69,13 +69,7 @@ $(function(){
         $("#content .wait").css("display","block");
         setTimeout(function(){
             $("#content .wait").css("display","none")//删除
-        }, 2000)
-    
-    })
-    $(".item .action").click(function(){
-        //移除整个商品记录
-        $(this).parents(".item").remove();
-        sum()
+        },2000)
     })
 })
 function countPrice(that,value){
@@ -88,7 +82,11 @@ function countPrice(that,value){
     that.parent().next().html("￥ "+sum);
 }
 //移除操作
-
+$(".item .action").click(function(){
+    //移除整个商品记录
+    $(this).parents(".item").remove();
+    sum()
+})
 //总价格和总数量的联动
 function sum(){
     //获取被选中的商品，累加商品数量和总价
@@ -103,7 +101,8 @@ function sum(){
         n = Number(n);
         p = Number(p.substring(2));
         num += n;
-        price += p; 
+        price += p;
+        
     })
     $(".total-num").html(num);
     $(".total-price").html(price);
