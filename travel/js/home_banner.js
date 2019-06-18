@@ -49,7 +49,7 @@ $(function(){
         $(liList.eq(i)).click(function(){
             liList.eq(index).css("background","rgba(0,0,0,0)")
             $(this).css("background","#fff");
-            imgList[index].style.display = "none";
+            imgList.eq(index).css("display","none");
             for(var j=0;j<liList.length;j++){
                 //点击后同步更改下标
                 if(liList[j].style.background=="rgb(255, 255, 255)"){
@@ -61,10 +61,10 @@ $(function(){
     }
 
     $("#tour #search2 img").mouseover(function(){
-        $(this).attr('src',"./img/home_imgd/search2.png")
+        $(this).attr('src',"./img/home_banner/search2.png")
     })
     $("#tour #search2 img").mouseout(function(){
-        $(this).attr('src',"./img/home_imgd/search1.png")
+        $(this).attr('src',"./img/home_banner/search1.png")
         $(this).prev().css('outline','none')
     })
 })
