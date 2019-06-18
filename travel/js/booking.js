@@ -73,7 +73,7 @@ $(function(){
     
     })
     //移除操作
-    $(".item .action").click(function(){
+    $(".item .action01").click(function(){
         //移除整个商品记录
         $(this).parents(".item").remove();
         sum()
