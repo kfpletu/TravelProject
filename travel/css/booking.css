@@ -220,3 +220,13 @@
     margin-top:40px;
     margin-right:50px;
 }
+#empty{
+    width: 400px;
+    margin: 100px auto;
+    display: none;
+}
+#empty p{
+    font-size:24px;
+    color: #ccc;
+    text-align: center;
+}
