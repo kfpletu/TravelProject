@@ -6,15 +6,15 @@ $(function(){
     var timer = setInterval(autoPlay,2000);
     function autoPlay(){
         //当前图片隐藏
-        imgList[index].style.display = "none";
-        liList[index].style.background = "rgba(0,0,0,0)";
+        imgList.eq(index).css("display","none");
+        liList.eq(index).css("background","rgba(0,0,0,0)");
         index ++;
         if(index == imgList.length){
             index = 0;
         }
         //元素显示
-        imgList[index].style.display = "block";
-        liList[index].style.background = "#fff";
+        imgList.eq(index).css("display","block");
+        liList.eq(index).css("background","#fff");
     }
     $("#imgd").mouseover(function (){
         clearInterval(timer);
@@ -24,52 +24,39 @@ $(function(){
     })
     //向左翻动
     $("#imgd .left").click(function(){
-        if(index>0){
-            index--;
-            imgList[index].style.display = "block";
-            imgList[index+1].style.display = "none";
-            liList[index].style.background = "#fff";
-            liList[index+1].style.background = "rgba(0,0,0,0)";
-        }else{
-            imgList[index].style.display = "none";
-            liList[index].style.background = "rgba(0,0,0,0)";
-            index = liList.length-1;
-            imgList[index].style.display = "block";
-            liList[index].style.background = "#fff";
-        }
+        //当前元素隐藏
+		$("#imgd img").eq(index).css("display","none");
+		$("#imgd li").eq(index).css("background","rgba(0,0,0,0)");
+		//更新下标
+		index = --index == -1 ? $("#imgd img").length-1 : index;
+		//设置显示
+		$("#imgd img").eq(index).css("display","block");
+		$("#imgd li").eq(index).css("background","#fff");
     })
     //向右翻动
     $("#imgd .right").click(function(){
-        if(index==liList.length-1){
-            index = -1;
-        }
-        index++;
-        if(index<liList.length&&index>0){
-            liList[index].style.background = "#fff";
-            liList[index-1].style.background = "rgba(0,0,0,0)";
-            imgList[index].style.display = "block";
-            imgList[index-1].style.display = "none";
-        }
-        if(index==0){
-            liList[liList.length-1].style.background = "rgba(0,0,0,0)";
-            liList[index].style.background = "#fff";
-            imgList[index].style.display = "block";
-            imgList[liList.length-1].style.display = "none"
-        }
+        //当前元素隐藏
+		$("#imgd img").eq(index).css("display","none");
+		$("#imgd li").eq(index).css("background","rgba(0,0,0,0)");
+		//更新下标
+		index = ++index == $("#imgd img").length ? 0 : index;
+		//设置显示
+		$("#imgd img").eq(index).css("display","block");
+		$("#imgd li").eq(index).css("background","#fff");
     })
+    //点击圆点实现翻页
     for(var i=0;i<imgList.length;i++){
-        $(liList[i]).click(function(){
+        $(liList.eq(i)).click(function(){
+            liList.eq(index).css("background","rgba(0,0,0,0)")
             $(this).css("background","#fff");
-            liList[index].style.background = "rgba(0,0,0,0)"
-            imgList[index].style.display = "none";
+            imgList.eq(index).css("display","none");
             for(var j=0;j<liList.length;j++){
                 //点击后同步更改下标
                 if(liList[j].style.background=="rgb(255, 255, 255)"){
                     index = j;
-                    console.log(index)
                 }
             }
-            imgList[index].style.display = "block";    
+            imgList.eq(index).css("display","block");  
         })
     }
 
