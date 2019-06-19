@@ -12,6 +12,9 @@
 <script src="../js/ticket/map.js"></script>
 <script src="../js/ticket/order.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DVz4AM0f5tDaH8dZwBCjRzHxuaKn3x7x"></script>
+<script type="text/javascript" src="../js/ticket/prefixfree.min.js"></script>
+<script type="text/javascript" src="../js/ticket/zoom-slideshow.js"></script>
+<script src='../js/ticket/tic.js'></script>
 <body>
     <header id="header">
         <div class="login">
@@ -44,8 +47,25 @@
     </header>
 
     <div id="bodyer1">
-        <div class="imgs">
+        <!-- <div class="imgs">
             <img src="../img/info/qinlingdongwuyuan.jpg" alt="图片加载中">
+        </div> -->
+        <div id="content">
+            <div id="view">
+                <img src="../img/info/1.jpg" alt="" />
+            </div>
+            <div id="thumbs">
+                <div id="nav-left-thumbs"></div>
+                <div id="pics-thumbs">
+                    <img src="../img/info/1.jpg" alt="Nature1" />
+                    <img src="../img/info/2.jpg" alt="Nature2" />
+                    <img src="../img/info/3.jpg" alt="Nature3" />
+                    <img src="../img/info/4.jpg" alt="Nature4" />
+                    <img src="../img/info/5.jpg" alt="Nature5" />
+
+                </div>
+                <div id="nav-right-thumbs"></div>
+            </div>
         </div>
         <div class="sDetails">
             <h1>秦岭野生动物园</h1>
@@ -137,7 +157,7 @@
                     <div class="gcount">
                         <!--阻止超链接默认事件-->
                         <a href="javascript:void(0)" class="minus">-</a>
-                        <input type="text" value="0">
+                        <input type="text" value="1">
                         <a href="javascript:void(0)" class="add">+</a>
                     </div>
                     <div class="gsum">￥0.00</div>
@@ -162,7 +182,7 @@
                     <div class="gcount">
                         <!--阻止超链接默认事件-->
                         <a href="javascript:void(0)" class="minus">-</a>
-                        <input type="text" value="0">
+                        <input type="text" value="1">
                         <a href="javascript:void(0)" class="add">+</a>
                     </div>
                     <div class="gsum">￥ 0.00</div>
@@ -268,4 +288,3 @@
     </footer>
 </body>
 </html>
-
