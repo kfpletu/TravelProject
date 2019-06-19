@@ -2,11 +2,10 @@ $(function(){
         // 百度地图API功能
         var map = new BMap.Map("allmap");
         map.centerAndZoom(new BMap.Point(108.861481, 34.058903), 12);
- 
         map.enableScrollWheelZoom(true);
         
         //单击获取点击的经纬度
-    map.addEventListener("click", function (e) {
+        map.addEventListener("click", function (e) {
             console.log(e.point.lng + "," + e.point.lat);
             var output = "";
             var searchComplete = function (results){
@@ -29,6 +28,5 @@ $(function(){
             var end = new BMap.Point(108.861481, 34.058903);
             transit.search(start, end);
         });
-        
     }
 )
