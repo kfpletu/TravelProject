@@ -162,9 +162,10 @@
 
 }
 .count a:hover{
-    /* background:#00bf4b; */
+ /* background:#00bf4b;  */
     color:white;
 }
+
 #bodytickrt .info{
     height:40px;
     width:1200px;
