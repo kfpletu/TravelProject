@@ -12,7 +12,7 @@
 				nextContainer: null,
 				zoomContainer: null,
 				zoomLevel: 2,
-				// loadMsg: 'Loading...'
+				loadMsg: 'Loading...'
 			};
 
 			// Initialisation de la collection de paramètres
@@ -92,7 +92,7 @@
 				_animateThumbs: function(pos) {
 					var me = this;
 
-					if (($(document).width()) < pos.pageX) {
+					if (($(document).width() / 2) < pos.pageX) {
 						$(me._opt.thumbsContainer).animate(
 							{scrollLeft : Math.max(0, $(me._opt.thumbsContainer).scrollLeft() + me._thumbSize)},
 							800
@@ -161,7 +161,7 @@
 						this._setDefault();
 					}
 					else {
-						var delta = (this._opt.zoomLevel - 1);
+						var delta = 50 * (this._opt.zoomLevel - 1);
 						
 						this._setZoomPosition(pos);
 						
@@ -175,8 +175,8 @@
 	
 				_setZoomPosition: function(_pos) {
 					$(this._opt.zoomContainer)
-						.css('top', _pos.pageY-50 )
-						.css('left', _pos.pageX-50 );
+						.css('top', _pos.pageY - 50)
+						.css('left', _pos.pageX - 50);
 				}
 			};
 

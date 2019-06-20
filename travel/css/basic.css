@@ -53,7 +53,9 @@ ul,ol {
 
 #header a:hover,
 #header .active a {
-    background-color: gray;
+    background-color:#d61e41;
+    /* border-bottom:-2px solid orange; */
+    color:
 }
 
 #header .link {

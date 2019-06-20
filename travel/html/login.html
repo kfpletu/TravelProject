@@ -17,14 +17,14 @@
         <a href="../index.html"><span class="s1">返回首页</span></a>
     </div>
     <div id="mian">
-        <form action="">
+        <form action="" method="post">
             <div class="content">
                 <p>
                     登录
                     <a href="../html/register.html">新用户注册</a>
                 </p>
                 <div class="text">
-                    <input type="text" name="uname" placeholder="请输入用户名" minlength="5" maxlength="10">
+                    <input type="text" name="uname" placeholder="请输入用户名(5~15个字母或数字)" minlength="5" maxlength="15">
                     <img src="../img/login/user.png" alt="">
                 </div>
                 <div class="text pwd">
@@ -32,9 +32,9 @@
                     <img src="../img/login/password.png" alt="">
                 </div>
                 <div class="validateCode">
-                    <img src="../img/header/logo.png" alt="验证码">
-                    <input type="text" name="validateCode" placeholder="验证码输入">
-                </div>
+                        <img src="../img/header/logo.png" alt="验证码">
+                        <input type="text" name="validateCode" placeholder="验证码输入">
+                    </div>
                 <div class="savePwd">
                     <input type="checkbox" name="savePwd" id="">自动登录
                     <a href="">忘记密码?</a>
