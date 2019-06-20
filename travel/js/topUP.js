@@ -1,6 +1,5 @@
 $(function(){
     $(".choice .other input").click(function () {
-        console.log('..')
         $(this).parents($('.choice')).children($('.input1')).attr('checked', false)
     })
 
