@@ -182,7 +182,8 @@ a:hover{
     text-align: center;
 }
 #container .infor .left a:hover{
-    background: #458b00;
+    background: #f60;
+    color:#fff;
 }
 
 /* 右边 */
@@ -204,11 +205,11 @@ a:hover{
 }
 
 /* ???? */
-#container .infor .select,
-#container .infor .right a:hover {
+/* #container .infor .select, */
+/* #container .infor .right a:hover {
     color: #fff;
-    background-color: #458b00;
-}
+    background-color:#b5b6b3;
+} */
 
 /* 子条目 */
 #container .list .tour {
@@ -328,6 +329,7 @@ a:hover{
     line-height: 25px;
     /* 垂直居中 */
     position: absolute;
+    margin: 0;
     top: 0;
     left: 0;
     color: white;
