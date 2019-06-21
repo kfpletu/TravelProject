@@ -76,6 +76,15 @@ ul,ol{
     color:#eee;
 }
 
+#cart{
+    float:right;
+    margin-right: 50px;
+    font-size: 13px;
+    color: #eee;
+}
+#cart .home{
+    line-height: 70px;
+}
 #header .link {
     width: 650px;
     height: 70px;
@@ -93,7 +102,7 @@ ul,ol{
 #header .login{
     float: right;
     font-size: 13px;
-    margin-right: 40px;
+    margin-right: 5px;
     line-height: 70px;
 }
 #header .login #login,#register,#cart{
