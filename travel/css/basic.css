@@ -50,6 +50,13 @@ ul,ol {
     color: #eee;
 
 }
+
+#header .active a {
+    background-color:#d61e41;
+    /* border-bottom:-2px solid orange; */
+    color:#eee;
+}
+
 #cart .info li a{
     display: block;
     color: #eee;
@@ -62,20 +69,15 @@ ul,ol{
 	list-style:none;
 	/* background:pink; */
 	}
-.info {
+.info1 {
 	/*设置隐藏*/
 	display:none;
 	}
 #cart ul li:hover ol{
     display:block;
     background: #d61e41;
-	}
-#header .active a {
-    background-color:#d61e41;
-    /* border-bottom:-2px solid orange; */
-    color:#eee;
-}
-
+    }
+    
 #cart{
     float:right;
     margin-right: 50px;
@@ -84,6 +86,9 @@ ul,ol{
 }
 #cart .home{
     line-height: 70px;
+}
+#cart .home .info1{
+    line-height: 25px;
 }
 #header .link {
     width: 650px;
