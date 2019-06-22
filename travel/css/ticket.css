@@ -141,7 +141,7 @@
     color: white;
     /* background:#00bf4b; */
 }
-.count{
+/* .count{
     height:36px;
     line-height: 36px;
     border-bottom: 1px solid gray;
@@ -163,8 +163,8 @@
 }
 .count a:hover{
  /* background:#00bf4b;  */
-    color:white;
-}
+    /* color:white;
+} */ 
 
 #bodytickrt .info{
     height:40px;
@@ -184,25 +184,41 @@
 	line-height:36px;
 }
 .check{
-	width:100px;
+	width:80px;
 }
 .gper{
-    width:100px;
+    width:80px;
 }
 .gname{
 	width:300px;
 }
 .gpt{
-    width:200px;
+    width:180px;
 }
 .gprice{
-	width:150px;
+	width:140px;
 }
 .gcount{
-	width:200px;
+	width:180px;
 }
 .gsum{
-	width:150px;
+	width:140px;
+}
+.gor{
+    width:100px;
+}
+.gor a{
+    display:inline-block;
+    background:crimson;
+    width:60px;
+    height:30px;
+    color: #000;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom:-12px;
+}
+.gor a:hover{
+    color: white;
 }
 
 /*全选按钮的垂直对齐*/
@@ -308,7 +324,7 @@ pre{
     color: #fff;
     font-size: 16px;
     font-style: normal;
-    background:#00bf4b
+    background:#00bf4b;
 }
 .c-wrapper-style #map_td{
     float: right;
